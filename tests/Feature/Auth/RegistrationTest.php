@@ -28,4 +28,45 @@ class RegistrationTest extends TestCase
         $this->assertAuthenticated();
         $response->assertRedirect(route('dashboard', absolute: false));
     }
+
+    public function test_honeypot_traps_bots_and_prevents_registration(): void
+    {
+        $response = $this->post('/register', [
+            'name' => 'Spam Bot',
+            'email' => 'spambot@spamdomain.com',
+            'password' => 'password',
+            'password_confirmation' => 'password',
+            'preferred_contact_method' => 'Buy Cheap Watches at spam.com',
+        ]);
+
+        // Assert user was NOT created in DB and NOT authenticated
+        $this->assertGuest();
+        $this->assertDatabaseMissing('users', [
+            'email' => 'spambot@spamdomain.com',
+        ]);
+        $response->assertRedirect(route('dashboard', absolute: false));
+    }
+
+    public function test_registration_is_rate_limited(): void
+    {
+        for ($i = 0; $i < 6; $i++) {
+            $this->post('/register', [
+                'name' => "User {$i}",
+                'email' => "user{$i}@example.com",
+                'password' => 'password',
+                'password_confirmation' => 'password',
+            ]);
+            $this->post('/logout');
+        }
+
+        // 7th attempt within the same minute should be throttled (HTTP 429)
+        $response = $this->post('/register', [
+            'name' => 'User Spam',
+            'email' => 'userspam@example.com',
+            'password' => 'password',
+            'password_confirmation' => 'password',
+        ]);
+
+        $response->assertStatus(429);
+    }
 }

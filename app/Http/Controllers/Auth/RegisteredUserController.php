@@ -30,6 +30,11 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request): RedirectResponse
     {
+        // Anti-bot honeypot check (silently drop spam bots)
+        if ($request->filled('preferred_contact_method')) {
+            return redirect(route('dashboard', absolute: false));
+        }
+
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],

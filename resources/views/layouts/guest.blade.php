@@ -40,46 +40,57 @@
             </div>
 
             <!-- Left Side (Luxury Brand Banner) - Visible on Desktop -->
-            <div class="hidden md:flex md:w-1/2 lg:w-3/5 bg-gradient-to-br from-[#0A261F] via-[#0E352B] to-[#14493D] geometric-pattern relative items-center justify-center p-8 lg:p-12">
-                <div class="z-10 text-center max-w-lg">
-                    <div class="flex justify-center mb-6">
-                        <div class="flex items-center justify-center w-20 h-20 bg-white/10 backdrop-blur-sm text-[#C9A24D] rounded-2xl font-serif font-bold text-4xl border border-[#C9A24D]/40 shadow-2xl">
+            <div class="hidden md:flex md:w-1/2 lg:w-3/5 bg-[#0A261F] relative items-center justify-center p-8 lg:p-12 overflow-hidden">
+                <!-- Subtle pattern overlay -->
+                <div class="absolute inset-0 opacity-[0.03]" style="background-image: url(&quot;data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-rule='evenodd'%3E%3Cpath d='M20 0L40 20L20 40L0 20z' fill-opacity='1'/%3E%3C/g%3E%3C/svg%3E&quot;);"></div>
+                
+                <div class="z-10 text-center max-w-md">
+                    <!-- Logo -->
+                    <div class="flex justify-center mb-8">
+                        <div class="flex items-center justify-center w-20 h-20 bg-[#C9A24D] text-[#0A261F] rounded-2xl font-serif font-bold text-4xl shadow-2xl shadow-black/30">
                             KS
                         </div>
                     </div>
-                    <h1 class="text-3xl lg:text-5xl font-serif font-bold text-white mb-3 tracking-wide">
+
+                    <!-- Brand Name -->
+                    <h1 class="text-3xl lg:text-4xl font-serif font-bold text-white mb-2 tracking-wide">
                         KAMELIA STORE
                     </h1>
-                    <p class="text-[#C9A24D] text-xs lg:text-sm tracking-[0.25em] uppercase font-semibold mb-10 font-mono">
-                        Authentic Pre-Order Luxury Boutique
-                    </p>
+                    <div class="flex items-center justify-center gap-3 mb-10">
+                        <div class="w-8 h-px bg-[#C9A24D]"></div>
+                        <p class="text-[#C9A24D] text-xs tracking-[0.2em] uppercase font-semibold">
+                            Luxury Boutique
+                        </p>
+                        <div class="w-8 h-px bg-[#C9A24D]"></div>
+                    </div>
                     
-                    <div class="space-y-4 text-left inline-block max-w-xs">
-                        <div class="flex items-center gap-3.5 text-emerald-50 bg-white/5 p-3 rounded-xl border border-white/10">
-                            <div class="w-9 h-9 rounded-lg bg-[#C9A24D]/20 flex items-center justify-center shrink-0">
-                                <svg class="w-5 h-5 text-[#C9A24D]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <!-- Feature Cards -->
+                    <div class="space-y-3 text-left max-w-sm mx-auto">
+                        <div class="flex items-center gap-4 bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/10">
+                            <div class="w-10 h-10 rounded-xl bg-[#C9A24D] flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5 text-[#0A261F]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                             </div>
                             <div>
-                                <h3 class="font-bold text-sm">100% Authentic</h3>
-                                <p class="text-xs text-emerald-200/80">Jaminan keaslian produk original</p>
+                                <h3 class="font-bold text-sm text-white">100% Authentic</h3>
+                                <p class="text-xs text-white/60 mt-0.5">Jaminan keaslian produk original</p>
                             </div>
                         </div>
-                        <div class="flex items-center gap-3.5 text-emerald-50 bg-white/5 p-3 rounded-xl border border-white/10">
-                            <div class="w-9 h-9 rounded-lg bg-[#C9A24D]/20 flex items-center justify-center shrink-0">
-                                <svg class="w-5 h-5 text-[#C9A24D]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                        <div class="flex items-center gap-4 bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/10">
+                            <div class="w-10 h-10 rounded-xl bg-[#C9A24D] flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5 text-[#0A261F]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
                             </div>
                             <div>
-                                <h3 class="font-bold text-sm">Physical QC</h3>
-                                <p class="text-xs text-emerald-200/80">Pengecekan kualitas fisik ketat</p>
+                                <h3 class="font-bold text-sm text-white">Physical QC</h3>
+                                <p class="text-xs text-white/60 mt-0.5">Pengecekan kualitas fisik ketat</p>
                             </div>
                         </div>
-                        <div class="flex items-center gap-3.5 text-emerald-50 bg-white/5 p-3 rounded-xl border border-white/10">
-                            <div class="w-9 h-9 rounded-lg bg-[#C9A24D]/20 flex items-center justify-center shrink-0">
-                                <svg class="w-5 h-5 text-[#C9A24D]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        <div class="flex items-center gap-4 bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/10">
+                            <div class="w-10 h-10 rounded-xl bg-[#C9A24D] flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5 text-[#0A261F]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
                             </div>
                             <div>
-                                <h3 class="font-bold text-sm">Secured Transaction</h3>
-                                <p class="text-xs text-emerald-200/80">Transaksi aman dan bergaransi</p>
+                                <h3 class="font-bold text-sm text-white">Secured Transaction</h3>
+                                <p class="text-xs text-white/60 mt-0.5">Transaksi aman dan bergaransi</p>
                             </div>
                         </div>
                     </div>

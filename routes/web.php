@@ -6,9 +6,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\LeadController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [CatalogController::class, 'welcome'])->name('home');
 
 Route::get('/katalog', [CatalogController::class, 'index'])->name('catalog.index');
 Route::get('/shop', [CatalogController::class, 'index'])->name('shop.index');

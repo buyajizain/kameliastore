@@ -8,6 +8,59 @@ use Illuminate\Support\Facades\File;
 class CatalogController extends Controller
 {
     /**
+     * Display the boutique landing page with featured products.
+     */
+    public function welcome()
+    {
+        $productsJsonPath = public_path('data/products.json');
+        $featuredProducts = [];
+        $totalProducts = 1500;
+
+        if (File::exists($productsJsonPath)) {
+            $cacheKey = 'kamelia_landing_featured_' . filemtime($productsJsonPath);
+            $featuredProducts = cache()->remember($cacheKey, 600, function () use ($productsJsonPath) {
+                $rawProducts = json_decode(File::get($productsJsonPath), true) ?? [];
+                $targetBrands = ['Coach', 'Tory Burch', 'Kate Spade', 'Michael Kors', 'Prada', 'Marc Jacobs'];
+                $selected = [];
+
+                foreach ($targetBrands as $brand) {
+                    foreach ($rawProducts as $item) {
+                        $itemBrand = $item['brand'] ?? '';
+                        $desc = strtolower($item['description'] ?? '');
+                        if ($itemBrand === $brand && (str_contains($desc, 'tas') || str_contains($desc, 'bag') || str_contains($desc, 'shoulder'))) {
+                            $imgLocal = $item['image_local'] ?? '';
+                            $imgRemote = $item['image_url_remote'] ?? '';
+                            $filename = $imgLocal ? basename($imgLocal) : (($item['id'] ?? '') . '.jpg');
+                            $resolvedImg = $imgRemote;
+                            if (file_exists(public_path('catalog_images/' . $filename))) {
+                                $resolvedImg = asset('catalog_images/' . $filename);
+                            } elseif (!empty($item['photos'])) {
+                                $resolvedImg = $item['photos'][0];
+                            }
+
+                            $selected[] = [
+                                'id' => $item['id'] ?? '',
+                                'brand' => $item['brand'] ?? '',
+                                'title' => $item['title'] ?? '',
+                                'selling_idr_formatted' => $item['selling_idr_formatted'] ?? 'Rp 1.500.000',
+                                'retail_ref_formatted' => $item['retail_ref_formatted'] ?? '',
+                                'condition' => $item['condition'] ?? '✨ Like New (Kondisi Sangat Mulus)',
+                                'photo' => $resolvedImg,
+                            ];
+                            break;
+                        }
+                    }
+                }
+                return $selected;
+            });
+
+            $totalProducts = count(json_decode(File::get($productsJsonPath), true) ?? []);
+        }
+
+        return view('welcome', compact('featuredProducts', 'totalProducts'));
+    }
+
+    /**
      * Display the online boutique catalog.
      */
     public function index()
