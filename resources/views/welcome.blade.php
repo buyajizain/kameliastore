@@ -1,3 +1,7 @@
+@php
+    $featuredProducts = $featuredProducts ?? [];
+    $totalProducts = $totalProducts ?? 1500;
+@endphp
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
 <head>
@@ -416,7 +420,7 @@
 
             <!-- Products Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                @forelse ($featuredProducts as $product)
+                @forelse ($featuredProducts ?? [] as $product)
                     <div class="bg-[#FAF8F5] rounded-2xl overflow-hidden border border-gray-200/80 hover:border-emerald-600 hover:shadow-xl transition duration-300 flex flex-col group" data-aos="fade-up">
                         
                         <!-- Product Image Container -->
