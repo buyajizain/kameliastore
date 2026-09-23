@@ -10,6 +10,12 @@
     <title>Kamelia Store | Butik Pre-Order Tas & Jam Mewah 100% Original</title>
     <meta name="description" content="Butik Pre-Order tas, dompet, dan jam tangan mewah 100% original. Koleksi Coach, Tory Burch, Kate Spade, Prada, Michael Kors langsung dari butik resmi USA & Eropa. Garansi uang kembali.">
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
+
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
