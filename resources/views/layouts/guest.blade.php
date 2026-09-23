@@ -20,6 +20,24 @@
                 background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c9a24d' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
             }
         </style>
+
+        <!-- Meta Pixel Code -->
+        <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '695641838885394');
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=695641838885394&ev=PageView&noscript=1"
+        /></noscript>
+        <!-- End Meta Pixel Code -->
     </head>
     <body class="font-sans text-gray-900 antialiased bg-gray-50">
         <div class="min-h-screen flex flex-col md:flex-row md:items-stretch">
