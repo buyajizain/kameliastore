@@ -70,7 +70,7 @@
                 <span class="hidden sm:inline">Pre-Order Batch Eksklusif: <strong>100% Guaranteed Authentic</strong> & Free Ongkir Se-Indonesia</span>
             </div>
             <div class="hidden sm:flex items-center gap-4 text-[11px] font-semibold">
-                <a href="https://wa.me/628997919274?text=Halo%20Admin%20Kamelia%20Store%2C%20saya%20tertarik%20tanya-tanya%20koleksi%20tas%20pre-order" target="_blank" class="text-amber-300 hover:text-white transition flex items-center gap-1">
+                <a href="https://wa.me/628997919274?text=Halo%20Admin%20Kamelia%20Store%2C%20saya%20tertarik%20tanya-tanya%20koleksi%20tas%20pre-order" target="_blank" onclick="if(typeof fbq==='function') fbq('track', 'Contact');" class="text-amber-300 hover:text-white transition flex items-center gap-1">
                     <span>Konsultasi WhatsApp: 0899-7919-274</span>
                     <span>→</span>
                 </a>
@@ -126,6 +126,7 @@
                     <!-- WhatsApp Concierge Pill (Desktop & Tablet) -->
                     <a href="https://wa.me/628997919274?text=Halo%20Admin%20Kamelia%20Store%2C%20saya%20ingin%20konsultasi%20tas%20pre-order" 
                        target="_blank" 
+                       onclick="if(typeof fbq==='function') fbq('track', 'Contact');"
                        class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-semibold rounded-full shadow-xs transition">
                         <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12.011 23.637c-3.132 0-6.105-1.226-8.381-3.454l-.442-.433-4.09 1.073 1.092-3.992-.387-.464c-2.454-2.935-3.803-6.61-3.803-10.367 0-9.117 7.439-16.516 16.582-16.516s16.582 7.399 16.582 16.516-7.439 16.516-16.582 16.516zm11.231-16.516c0-6.206-5.06-11.252-11.231-11.252-6.207 0-11.231 5.06-11.231 11.252 0 2.871 1.092 5.59 3.078 7.697l.63.673-.935 3.42 3.51-.92.68.665c2.14 2.083 4.966 3.228 7.96 3.228 6.207 0 11.231-5.06 11.231-11.252zm-12.723-5.228c-.146-.327-.301-.334-.441-.341-.115-.005-.248-.005-.381-.005-.133 0-.349.05-.532.249-.183.199-.698.68-.698 1.656 0 .975.714 1.916.814 2.049.099.133 1.376 2.217 3.407 3.033.483.195.86.311 1.155.405.485.151.926.13 1.275.078.388-.058 1.196-.488 1.362-.96.166-.472.166-.877.116-.96-.05-.083-.183-.133-.382-.233s-.382-.233-.532-.349c-.149-.116-.249-.166-.349-.1-.1.066-.2.166-.3.266s-.208.216-.301.327c-.092.112-.187.126-.386.026-.199-.099-.838-.309-1.595-.983-.591-.525-.99-1.173-1.106-1.372-.116-.199-.012-.307.087-.406.089-.089.199-.233.299-.349.099-.116.133-.199.199-.332.066-.133.033-.249-.017-.349s-.441-1.067-.611-1.485z" fill-rule="evenodd"/></svg>
                         <span class="hidden xl:inline">0899-7919-274</span>
@@ -151,6 +152,7 @@
                     <!-- Mobile Direct WA Icon (Clean & Compact) -->
                     <a href="https://wa.me/628997919274?text=Halo%20Admin%20Kamelia%20Store%2C%20saya%20ingin%20konsultasi%20tas%20pre-order" 
                        target="_blank" 
+                       onclick="if(typeof fbq==='function') fbq('track', 'Contact');"
                        class="sm:hidden p-2 text-emerald-700 hover:bg-emerald-50 rounded-lg transition" 
                        aria-label="Chat WhatsApp">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.011 23.637c-3.132 0-6.105-1.226-8.381-3.454l-.442-.433-4.09 1.073 1.092-3.992-.387-.464c-2.454-2.935-3.803-6.61-3.803-10.367 0-9.117 7.439-16.516 16.582-16.516s16.582 7.399 16.582 16.516-7.439 16.516-16.582 16.516zm11.231-16.516c0-6.206-5.06-11.252-11.231-11.252-6.207 0-11.231 5.06-11.231 11.252 0 2.871 1.092 5.59 3.078 7.697l.63.673-.935 3.42 3.51-.92.68.665c2.14 2.083 4.966 3.228 7.96 3.228 6.207 0 11.231-5.06 11.231-11.252zm-12.723-5.228c-.146-.327-.301-.334-.441-.341-.115-.005-.248-.005-.381-.005-.133 0-.349.05-.532.249-.183.199-.698.68-.698 1.656 0 .975.714 1.916.814 2.049.099.133 1.376 2.217 3.407 3.033.483.195.86.311 1.155.405.485.151.926.13 1.275.078.388-.058 1.196-.488 1.362-.96.166-.472.166-.877.116-.96-.05-.083-.183-.133-.382-.233s-.382-.233-.532-.349c-.149-.116-.249-.166-.349-.1-.1.066-.2.166-.3.266s-.208.216-.301.327c-.092.112-.187.126-.386.026-.199-.099-.838-.309-1.595-.983-.591-.525-.99-1.173-1.106-1.372-.116-.199-.012-.307.087-.406.089-.089.199-.233.299-.349.099-.116.133-.199.199-.332.066-.133.033-.249-.017-.349s-.441-1.067-.611-1.485z" fill-rule="evenodd"/></svg>
@@ -201,7 +203,7 @@
             </a>
 
             <!-- Mobile WhatsApp Direct Button -->
-            <a href="https://wa.me/628997919274?text=Halo%20Admin%20Kamelia%20Store%2C%20saya%20ingin%20konsultasi%20tas%20pre-order" target="_blank" class="flex items-center justify-center gap-2 w-full py-3 bg-emerald-700 text-white font-bold text-sm rounded-xl shadow-md">
+            <a href="https://wa.me/628997919274?text=Halo%20Admin%20Kamelia%20Store%2C%20saya%20ingin%20konsultasi%20tas%20pre-order" target="_blank" onclick="if(typeof fbq==='function') fbq('track', 'Contact');" class="flex items-center justify-center gap-2 w-full py-3 bg-emerald-700 text-white font-bold text-sm rounded-xl shadow-md">
                 <span>💬 Chat WhatsApp (0899-7919-274)</span>
             </a>
 
@@ -258,7 +260,7 @@
                             <span>👜 Buka 1.500+ Katalog Pre-Order</span>
                             <span>→</span>
                         </a>
-                        <a href="https://wa.me/628997919274?text=Halo%20Admin%20Kamelia%20Store%2C%20saya%20mau%20tanya-tanya%20koleksi%20tas%20pre-order%20dong" target="_blank" class="inline-flex justify-center items-center gap-2 px-5 py-3.5 sm:px-8 sm:py-4 bg-emerald-800/90 hover:bg-emerald-700 text-white font-bold text-sm rounded-xl border border-emerald-600/50 transition">
+                        <a href="https://wa.me/628997919274?text=Halo%20Admin%20Kamelia%20Store%2C%20saya%20mau%20tanya-tanya%20koleksi%20tas%20pre-order%20dong" target="_blank" onclick="if(typeof fbq==='function') fbq('track', 'Contact');" class="inline-flex justify-center items-center gap-2 px-5 py-3.5 sm:px-8 sm:py-4 bg-emerald-800/90 hover:bg-emerald-700 text-white font-bold text-sm rounded-xl border border-emerald-600/50 transition">
                             <svg class="w-5 h-5 fill-current text-green-400" viewBox="0 0 24 24"><path d="M12.011 23.637c-3.132 0-6.105-1.226-8.381-3.454l-.442-.433-4.09 1.073 1.092-3.992-.387-.464c-2.454-2.935-3.803-6.61-3.803-10.367 0-9.117 7.439-16.516 16.582-16.516s16.582 7.399 16.582 16.516-7.439 16.516-16.582 16.516zm11.231-16.516c0-6.206-5.06-11.252-11.231-11.252-6.207 0-11.231 5.06-11.231 11.252 0 2.871 1.092 5.59 3.078 7.697l.63.673-.935 3.42 3.51-.92.68.665c2.14 2.083 4.966 3.228 7.96 3.228 6.207 0 11.231-5.06 11.231-11.252zm-12.723-5.228c-.146-.327-.301-.334-.441-.341-.115-.005-.248-.005-.381-.005-.133 0-.349.05-.532.249-.183.199-.698.68-.698 1.656 0 .975.714 1.916.814 2.049.099.133 1.376 2.217 3.407 3.033.483.195.86.311 1.155.405.485.151.926.13 1.275.078.388-.058 1.196-.488 1.362-.96.166-.472.166-.877.116-.96-.05-.083-.183-.133-.382-.233s-.382-.233-.532-.349c-.149-.116-.249-.166-.349-.1-.1.066-.2.166-.3.266s-.208.216-.301.327c-.092.112-.187.126-.386.026-.199-.099-.838-.309-1.595-.983-.591-.525-.99-1.173-1.106-1.372-.116-.199-.012-.307.087-.406.089-.089.199-.233.299-.349.099-.116.133-.199.199-.332.066-.133.033-.249-.017-.349s-.441-1.067-.611-1.485z" fill-rule="evenodd"/></svg>
                             <span>Chat Personal Concierge</span>
                         </a>
@@ -490,7 +492,7 @@
 
                             <!-- Action Buttons -->
                             <div class="mt-5 grid grid-cols-2 gap-2.5 pt-2">
-                                <a href="https://wa.me/628997919274?text=Halo%20Admin%20Kamelia%20Store%2C%20saya%20tertarik%20dengan%20Pre-Order%20tas%20{{ urlencode($product['brand'] . ' - ' . $product['title']) }}%20harga%20{{ urlencode($product['selling_idr_formatted']) }}%20apakah%20masih%20tersedia%3F" target="_blank" class="flex items-center justify-center gap-1.5 py-2.5 px-3 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold rounded-xl transition shadow-xs">
+                                <a href="https://wa.me/628997919274?text=Halo%20Admin%20Kamelia%20Store%2C%20saya%20tertarik%20dengan%20Pre-Order%20tas%20{{ urlencode($product['brand'] . ' - ' . $product['title']) }}%20harga%20{{ urlencode($product['selling_idr_formatted']) }}%20apakah%20masih%20tersedia%3F" target="_blank" onclick="if(typeof fbq==='function') fbq('track', 'InitiateCheckout', {content_name: '{{ addslashes($product['title']) }}', content_category: '{{ addslashes($product['brand']) }}'});" class="flex items-center justify-center gap-1.5 py-2.5 px-3 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold rounded-xl transition shadow-xs">
                                     <span>💬 Order WA</span>
                                 </a>
                                 <a href="{{ url('/katalog') }}" class="flex items-center justify-center py-2.5 px-3 bg-white hover:bg-gray-100 text-gray-800 border border-gray-300 text-xs font-bold rounded-xl transition">
@@ -597,7 +599,7 @@
                         Tim admin WhatsApp kami siap merespons dengan cepat dan ramah.
                     </p>
                 </div>
-                <a href="https://wa.me/628997919274?text=Halo%20Admin%20Kamelia%20Store%2C%20saya%20ingin%20tanya%20detail%20alur%20pre-order%20tas" target="_blank" class="shrink-0 px-6 py-3.5 bg-white text-emerald-950 hover:bg-amber-300 font-bold text-xs sm:text-sm rounded-xl transition shadow-md">
+                <a href="https://wa.me/628997919274?text=Halo%20Admin%20Kamelia%20Store%2C%20saya%20ingin%20tanya%20detail%20alur%20pre-order%20tas" target="_blank" onclick="if(typeof fbq==='function') fbq('track', 'Contact');" class="shrink-0 px-6 py-3.5 bg-white text-emerald-950 hover:bg-amber-300 font-bold text-xs sm:text-sm rounded-xl transition shadow-md">
                     💬 Tanya Admin (0899-7919-274)
                 </a>
             </div>
@@ -662,7 +664,7 @@
                             <div class="text-xs text-gray-400">Verifikasi Langsung:</div>
                             <div class="text-sm font-bold text-white">0899-7919-274</div>
                         </div>
-                        <a href="https://wa.me/628997919274?text=Halo%20Admin%2C%20saya%20ingin%20tanya%20detail%20garansi%20keaslian%20tas" target="_blank" class="px-4 py-2 bg-[#C9A24D] hover:bg-[#b58f3c] text-[#0A261F] font-bold text-xs rounded-lg transition">
+                        <a href="https://wa.me/628997919274?text=Halo%20Admin%2C%20saya%20ingin%20tanya%20detail%20garansi%20keaslian%20tas" target="_blank" onclick="if(typeof fbq==='function') fbq('track', 'Contact');" class="px-4 py-2 bg-[#C9A24D] hover:bg-[#b58f3c] text-[#0A261F] font-bold text-xs rounded-lg transition">
                             Konsultasi Garansi
                         </a>
                     </div>
@@ -823,7 +825,7 @@
                 <a href="{{ url('/katalog') }}" class="px-5 py-3.5 sm:px-8 sm:py-4 bg-[#C9A24D] hover:bg-[#b58f3c] text-[#0A261F] font-bold text-sm rounded-xl transition shadow-xl">
                     👜 Jelajahi 1.500+ Katalog Pre-Order
                 </a>
-                <a href="https://wa.me/628997919274?text=Halo%20Admin%20Kamelia%20Store%2C%20saya%20ingin%20konsultasi%20tas%20pre-order" target="_blank" class="px-5 py-3.5 sm:px-8 sm:py-4 bg-emerald-700 hover:bg-emerald-600 text-white font-bold text-sm rounded-xl border border-emerald-500/50 transition">
+                <a href="https://wa.me/628997919274?text=Halo%20Admin%20Kamelia%20Store%2C%20saya%20ingin%20konsultasi%20tas%20pre-order" target="_blank" onclick="if(typeof fbq==='function') fbq('track', 'Contact');" class="px-5 py-3.5 sm:px-8 sm:py-4 bg-emerald-700 hover:bg-emerald-600 text-white font-bold text-sm rounded-xl border border-emerald-500/50 transition">
                     💬 Hubungi WhatsApp: 0899-7919-274
                 </a>
             </div>
@@ -892,6 +894,7 @@
            target="_blank" 
            title="Hubungi WhatsApp: 0899-7919-274"
            aria-label="Chat WhatsApp Admin"
+           onclick="if(typeof fbq==='function') fbq('track', 'Contact');"
            class="wa-pulse w-12 h-12 sm:w-14 sm:h-14 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full shadow-xl flex items-center justify-center transition duration-200 pointer-events-auto">
             <svg class="w-6 h-6 sm:w-7 sm:h-7 fill-current" viewBox="0 0 24 24">
                 <path d="M12.011 23.637c-3.132 0-6.105-1.226-8.381-3.454l-.442-.433-4.09 1.073 1.092-3.992-.387-.464c-2.454-2.935-3.803-6.61-3.803-10.367 0-9.117 7.439-16.516 16.582-16.516s16.582 7.399 16.582 16.516-7.439 16.516-16.582 16.516zm11.231-16.516c0-6.206-5.06-11.252-11.231-11.252-6.207 0-11.231 5.06-11.231 11.252 0 2.871 1.092 5.59 3.078 7.697l.63.673-.935 3.42 3.51-.92.68.665c2.14 2.083 4.966 3.228 7.96 3.228 6.207 0 11.231-5.06 11.231-11.252zm-12.723-5.228c-.146-.327-.301-.334-.441-.341-.115-.005-.248-.005-.381-.005-.133 0-.349.05-.532.249-.183.199-.698.68-.698 1.656 0 .975.714 1.916.814 2.049.099.133 1.376 2.217 3.407 3.033.483.195.86.311 1.155.405.485.151.926.13 1.275.078.388-.058 1.196-.488 1.362-.96.166-.472.166-.877.116-.96-.05-.083-.183-.133-.382-.233s-.382-.233-.532-.349c-.149-.116-.249-.166-.349-.1-.1.066-.2.166-.3.266s-.208.216-.301.327c-.092.112-.187.126-.386.026-.199-.099-.838-.309-1.595-.983-.591-.525-.99-1.173-1.106-1.372-.116-.199-.012-.307.087-.406.089-.089.199-.233.299-.349.099-.116.133-.199.199-.332.066-.133.033-.249-.017-.349s-.441-1.067-.611-1.485z" fill-rule="evenodd"/>

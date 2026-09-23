@@ -1333,7 +1333,7 @@
     <script>
         const CAN_EDIT = {{ (Auth::check() && (Auth::user()->isAdmin() || Auth::user()->isStaff())) ? 'true' : 'false' }};
         const IS_ADMIN = {{ (Auth::check() && Auth::user()->isAdmin()) ? 'true' : 'false' }};
-        const WA_ADMIN_NUMBER = "6281234567890"; // Nomor WhatsApp Toko Kamelia Store
+        const WA_ADMIN_NUMBER = "628997919274"; // Nomor WhatsApp Resmi Toko Kamelia Store
         const ASSET_BASE = "{{ asset('') }}".replace(/\/+$/, '') + '/';
 
         function resolveImageUrl(img, fallbackUrl) {
@@ -1402,6 +1402,9 @@
         }
 
         function openAdminWA() {
+            if (typeof fbq === 'function') {
+                fbq('track', 'Contact');
+            }
             const msg = encodeURIComponent("Halo Concierge Kamelia Store, saya ingin konsultasi mengenai koleksi Pre-Order luxury branded.");
             window.open(`https://wa.me/${WA_ADMIN_NUMBER}?text=${msg}`, '_blank');
         }
@@ -1490,7 +1493,7 @@
                                 <span class="retail-ref">${p.retail_ref_formatted}</span>
                                 <div class="selling-price">${p.selling_idr_formatted}</div>
                             </div>
-                            <a href="${waUrl}" target="_blank" onclick="event.stopPropagation()" class="btn-buy-wa">
+                            <a href="${waUrl}" target="_blank" onclick="event.stopPropagation(); if(typeof fbq==='function') fbq('track', 'InitiateCheckout', {content_name: '${p.title.replace(/'/g, "\\'")}', content_category: '${p.brand}', value: ${p.selling_idr}, currency: 'IDR'});" class="btn-buy-wa">
                                 <span>Pesan PO</span>
                             </a>
                         </div>
@@ -1642,6 +1645,16 @@
 
             document.getElementById('modalDesc').innerText = prod.description || "Koleksi Pre-Order Eksklusif Kamelia Store. Unit telah melewati inspeksi keaslian menyeluruh.";
             document.getElementById('modalWaBtn').href = createOrderWA(prod);
+            document.getElementById('modalWaBtn').onclick = () => {
+                if (typeof fbq === 'function') {
+                    fbq('track', 'InitiateCheckout', {
+                        content_name: prod.title,
+                        content_category: prod.brand,
+                        value: prod.selling_idr,
+                        currency: 'IDR'
+                    });
+                }
+            };
 
             // Set Admin & Staff Order Fulfillment Link
             const mercariBtn = document.getElementById('modalMercariBtn');
